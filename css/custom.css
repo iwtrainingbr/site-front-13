@@ -1,0 +1,11 @@
+html, body, header {
+  height: 100%;
+}
+
+/* header {
+  background: url('../img/background.jpg');
+} */
+
+p .material-icons {
+  font-size: 7rem;
+}
