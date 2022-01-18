@@ -10,6 +10,31 @@ p .material-icons {
   font-size: 7rem;
 }
 
+.question {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0
+}
+
+.question input,
+.question .answer { display: none }
+
+.question label {
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  width: 100%
+}
+
+.question input:checked ~ .answer {
+  display: block
+}
+.titulo_duvida {
+  text-align: center;
+  border-top: 2px;
+  border-top: #000000;
+
+=======
+
 
 .heart:hover {
   color: red;
@@ -40,4 +65,4 @@ p .material-icons {
 
 .people {
   transition: 1s;
-}
+ }
