@@ -9,6 +9,7 @@ html, body, header {
 p .material-icons {
   font-size: 7rem;
 }
+
 .question {
   border-bottom: 1px solid #ccc;
   padding: 10px 0
@@ -32,4 +33,36 @@ p .material-icons {
   border-top: 2px;
   border-top: #000000;
 
+=======
+
+
+.heart:hover {
+  color: red;
+  transition: 1s;
+  transform: scale(1.1); 
 }
+
+.world:hover {
+  color: rgb(72, 132, 201);
+  transition: 1s;
+  transform: scale(1.1); 
+}
+
+.people:hover {
+  color: rgb(192, 192, 42);
+  transition: 1s;
+  transform: scale(1.1); 
+}
+
+.heart {
+  transition: 1s;
+}
+
+.world {
+  transition: 1s;
+
+}
+
+.people {
+  transition: 1s;
+ }

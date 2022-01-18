@@ -5,24 +5,64 @@
     <title>Site - Turma F13</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <link rel="stylesheet" href="css/custom.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   </head>
   <body class="container">
-    <nav>
-      MENU
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Menu</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">GPS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Imagens</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Busca" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
     </nav>
 
     <header class="row text-center d-flex align-items-center">
       <div class="col">
-        <h1>TITULO CHAMANDO ATENÇÃO</h1>
+        <h1 class="animate__animated animate__bounce">TÍTULO CHAMANDO ATENÇÃO</h1>
         <h4 class="text-muted">Percebemos, cada vez mais, que a execução dos pontos do programa auxilia a preparação e a composição do retorno esperado a longo prazo.</h4>
         <hr>
         <a href="#" class="btn btn-primary btn-lg">Cadastre-se</a>
         <a href="#" class="btn btn-outline-primary btn-lg">Saiba mais</a>
       </div>
+
       <div class="col">
-        <img src="img/header-v2.svg" width="100%" alt="">
+        <img src="img/header-v2.svg" width="100%" class="animate__animated animate__pulse" alt="">
       </div>
     </header>
 
@@ -35,7 +75,7 @@
 
       <div class="col">
         <p>
-          <span class="material-icons">favorite</span>
+          <span class="material-icons heart">favorite</span>
         </p>
         <hr>
         <p>
@@ -48,7 +88,7 @@
 
       <div class="col">
         <p>
-          <span class="material-icons">public</span>
+          <span class="material-icons world">public</span>
         </p>
         <hr>
         <p>
@@ -61,7 +101,7 @@
 
       <div class="col">
         <p>
-          <span class="material-icons">group</span>
+          <span class="material-icons people">group</span>
         </p>
         <hr>
         <p>
@@ -113,8 +153,86 @@
       </div>
     </section>
 
-    <footer>
-      Rodapé
+    <section class="text-center">
+      <h2>CONTATOS</h2>
+      
+      <form>
+        <div>
+          <label for="name"></label>
+          <input class="form-control" type="text" id="name" placeholder="Nome" required>
+        </div>
+        <div>
+          <label for="Email"></label>
+          <input class="form-control" type="email" id="email" placeholder="Email" required>
+        </div>
+        <div>
+          <label for="tel"></label>
+          <input class="form-control" tel="text" id="tel" placeholder="Telefone" required>
+        </div>
+
+        <div>
+          <textarea class="form-control mt-4" name="" id="" placeholder="Mensagem"></textarea>
+         
+        </div>
+        <br>
+
+        <button class="btn btn-primary">Concluir</button>
+        
+      </form>
+      
+    </section>
+  
+    <section class="mt-5 row text-center pb-5">
+      <h2>Endereço</h2>
+      <hr>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.2855919480344!2d-38.565674485710446!3d-3.747852244320042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c749b3bccd7901%3A0xf5dd25691ea49133!2sTapa%20no%20Corte%20BARBEARIA!5e0!3m2!1spt-BR!2sbr!4v1642464396185!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+     </section>
+
+    <footer class="mt5- row bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright:
+        <a class="text-white" href="#">Turma 13 a melhor</a>
+      </div>
+      <!-- Copyright -->
     </footer>
 
     <!-- JavaScript Bundle with Popper -->
