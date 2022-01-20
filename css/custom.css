@@ -28,12 +28,13 @@ p .material-icons {
 .question input:checked ~ .answer {
   display: block
 }
+
 .titulo_duvida {
   text-align: center;
   border-top: 2px;
   border-top: #000000;
+}
 
-=======
 
 
 .heart:hover {
